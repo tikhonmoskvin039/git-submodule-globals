@@ -1,8 +1,9 @@
-import React from 'react'
+import { useNavigate } from "react-router-dom"
 
 const MyButton = () => {
+  const navigate = useNavigate()
   return (
-    <div>MyButton</div>
+    <div onClick={() => navigate('/subsub')} style={{width: 100, height: 100, backgroundColor: 'red'}}>MyButton</div>
   )
 }
 
